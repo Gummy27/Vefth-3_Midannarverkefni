@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<link type="text/css" rel="stylesheet" href="/static/main.css/">
+<main>
+    <header>
+        {% include "header.tpl" %}
+        {% block header %}{% endblock %}
+    </header>
+    <div class="grid">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        {% include "footer.tpl" %}
+    </footer>
+</main>
