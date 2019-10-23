@@ -53,5 +53,9 @@ def station(index):
 
     return render_template('station.tpl', info=station)
 
+@app.errorhandler(404)
+def error(error):
+	return("<h1> Error page not found </h1>")
+
 if __name__ == "__main__":
 	app.run(debug=True, use_reloader=True)
