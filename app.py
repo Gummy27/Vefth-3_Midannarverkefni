@@ -55,7 +55,8 @@ def station(index):
 
 @app.errorhandler(404)
 def error(error):
-	return("<h1> Error page not found </h1>")
+	return """<h1> Error page not found </h1>
+	<a href="/"> Home </a>"""
 
 if __name__ == "__main__":
 	app.run(debug=True, use_reloader=True)
